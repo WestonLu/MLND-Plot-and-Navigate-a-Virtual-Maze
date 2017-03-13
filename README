@@ -1,0 +1,18 @@
+The tester program can be run as follows:
+
+python tester.py <maze_file_name>  <controller_name>
+
+For example, you can run the random controller with maze 02:
+
+python tester.py test_maze_02.txt random
+
+Each time after the first run, the robot map the maze based on the collected data from the first run, the mapped maze is stored in the file maze.txt. If you want to see the maze it mapped, use command line as follows, in the mapped maze, closed blocks means the robot has not reached and sensored there:
+
+python showmaze.py maze.txt
+
+The following is a list of controller names:
+
+random
+deadend
+counter
+heuristic
